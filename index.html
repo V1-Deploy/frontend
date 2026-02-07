@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topside Tracker - Home</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+</head>
+<body>
+    <!-- BACKGROUND STRIPES -->
+    <div class="bg-stripes">
+      <span class="stripe stripe-1"></span>
+      <span class="stripe stripe-2"></span>
+      <span class="stripe stripe-3"></span>
+      <span class="stripe stripe-4"></span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="header-logo-link">
+                <img src="header-logo.png" alt="Topside Tracker" class="header-logo">
+            </a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="mission.html" class="nav-link">Our Mission</a>
+                <a href="support.html" class="nav-link">Support Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <h1 class="main-title">Topside Tracker</h1>
+            <p class="subtitle">Hold. Raiders. Accountable.</p>
+        </section>
+
+        <!-- Search Section -->
+        <section class="search-section">
+            <div class="search-container">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search for a raider by Embark ID (ex: Cheater#1234)"
+                >
+                <button id="searchBtn" class="search-btn">Search</button>
+            </div>
+            <div id="searchError" class="error-message"></div>
+        </section>
+
+        <!-- Report Button -->
+        <section class="report-section">
+            <button id="reportBtn" class="report-btn"> Submit a Report </button>
+            
+            <!-- Report Dropdown Panel -->
+            <div id="reportPanel" class="report-panel">
+                <input 
+                    type="text" 
+                    id="reportInput" 
+                    class="report-input" 
+                    placeholder="Enter Raider Embark ID"
+                >
+                
+                <div class="report-types">
+                    <button class="report-type-btn" data-type="aimbot">Aimbot</button>
+                    <button class="report-type-btn" data-type="wallhack">Wall-Hacks / ESP</button>
+                    <button class="report-type-btn" data-type="macro">Macro Abuse</button>
+                    <button class="report-type-btn" data-type="glitch">Glitch Abuse</button>
+                    <button class="report-type-btn good-player-btn" data-type="goodplayer">Good Player</button>
+                </div>
+                
+                <button id="submitReportBtn" class="submit-report-btn">Submit</button>
+            </div>
+        </section>
+        <!-- New Wide Card -->
+        <section class="wide-card">
+            <div class="wide-card-text">
+        <h3 class="wide-card-title">How to find an Embark ID</h3>
+        <p class="wide-card-description">To find a raider's Embark ID, look for the "Copy Embark ID" in the post-game report. The ID is then copied and can be pasted in the SEARCH bar.</p>
+            </div>
+            <div class="wide-card-image">
+                <img src="copy-embark-id.jpg" alt="Description">
+            </div>
+        </section>
+
+        <!-- Info Cards -->
+        <section class="info-cards">
+            <div class="info-card">
+                <h3 class="card-title">Holding Raiders Accountable</h3>
+                <p class="card-text">Cheating Raiders are too comfortable now-a-days. They have been trashing the Topside and ruining our FAVORITE GAME. Now is YOUR chance to take ACTION and help clean up the Topside!</p>
+            </div>
+            <div class="info-card">
+                <h3 class="card-title">Reporting and Tracking</h3>
+                <p class="card-text">We’ve all encountered questionable raiders, speaking up about it is nothing to be ashamed of. Your report makes a REAL difference and protects those who choose to play fair.</p>
+            </div>
+            <div class="info-card">
+                <h3 class="card-title">Check a Raider's Background</h3>
+                <p class="card-text"> Take a moment to check a raider’s background and see whether they’ve earned a reputation for fair play or have raised concerns within the community.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-disclaimer">Topside Tracker is a fan-made project and is not affiliated with Embark Studios. All content is user-submitted and unverified.</p>
+        <div class="footer-links">
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <span class="footer-separator">•</span>
+            <a href="terms.html" class="footer-link">Terms of Service</a>
+            <span class="footer-separator">•</span>
+            <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

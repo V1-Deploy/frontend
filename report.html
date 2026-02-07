@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topside Tracker - Report</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- BACKGROUND STRIPES -->
+    <div class="bg-stripes">
+      <span class="stripe stripe-1"></span>
+      <span class="stripe stripe-2"></span>
+      <span class="stripe stripe-3"></span>
+      <span class="stripe stripe-4"></span>
+    </div>
+
+    <!-- Navigation Header -->
+    <header>
+        <div class="header-container">
+            <a href="index.html" class="header-logo-link">
+                <img src="header-logo.png" alt="Topside Tracker" class="header-logo">
+            </a>
+            <nav class="navbar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="mission.html" class="nav-link">Our Mission</a>
+                <a href="support.html" class="nav-link">Support Us</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container report-page">
+        <!-- Name Card -->
+        <section class="report-card name-card">
+            <div class="name-card-content">
+                <div class="embark-id-section">
+                    <h2 id="embarkId" class="embark-id">-</h2>
+                </div>
+                <div class="divider"></div>
+                <div class="total-reports-section">
+                    <p class="total-label">Total Reports</p>
+                    <p id="totalReports" class="total-count">0</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Report Types Card -->
+        <section class="report-card types-card">
+            <div class="report-item">
+                <span class="report-label">Aimbot</span>
+                <span id="aimbotCount" class="report-count">0</span>
+            </div>
+            <div class="report-item">
+                <span class="report-label">Wall-Hacks / ESP</span>
+                <span id="wallhackCount" class="report-count">0</span>
+            </div>
+            <div class="report-item">
+                <span class="report-label">Macro Abuse</span>
+                <span id="macroCount" class="report-count">0</span>
+            </div>
+            <div class="report-item">
+                <span class="report-label">Glitch Abuse</span>
+                <span id="glitchCount" class="report-count">0</span>
+            </div>
+            <div class="report-item">
+                <span class="report-label">Good Player</span>
+                <span id="goodplayerCount" class="report-count good-player-count">0</span>
+            </div>
+
+            <!-- Report Button Inside Card -->
+            <div class="report-button-inline">
+                <button id="reportBtnPage" class="report-btn-inline">Submit a Report</button>
+            </div>
+
+            <p class="types-card-text">
+                Reports are user-submitted, unverified, and may not be true.
+            </p>
+
+            <!-- Report Dropdown Panel -->
+            <div id="reportPanelPage" class="report-panel">
+                <input 
+                    type="text" 
+                    id="reportInputPage" 
+                    class="report-input" 
+                    placeholder="Enter Raider Embark ID"
+                >
+                
+                <div class="report-types">
+                    <button class="report-type-btn-page" data-type="aimbot">Aimbot</button>
+                    <button class="report-type-btn-page" data-type="wallhack">Wall-Hacks / ESP</button>
+                    <button class="report-type-btn-page" data-type="macro">Macro Abuse</button>
+                    <button class="report-type-btn-page" data-type="glitch">Glitch Abuse</button>
+                    <button class="report-type-btn-page good-player-btn" data-type="goodplayer">Good Player</button>
+                </div>
+                
+                <button id="submitReportBtnPage" class="submit-report-btn">Submit</button>
+            </div>
+        </section>
+
+        <!-- Report Trends Chart -->
+        <section class="report-card chart-card">
+            <h3 class="chart-title">Reports by Day (Last 30 Days)</h3>
+            <div class="chart-container">
+                <canvas id="reportChart"></canvas>
+            </div>
+        </section>
+
+        
+
+    </main>
+</section>
+
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-disclaimer">Topside Tracker is a fan-made project and is not affiliated with Embark Studios. All content is user-submitted and unverified.</p>
+        <div class="footer-links">
+            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <span class="footer-separator">•</span>
+            <a href="terms.html" class="footer-link">Terms of Service</a>
+            <span class="footer-separator">•</span>
+            <a href="contact.html" class="footer-link">Contact</a>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
