@@ -55,13 +55,16 @@ const REPORTER_ID = getReporterId();
  */
 async function submitReportAPI(embarkId, reportType) {
     try {
+        // Normalize Reports (all lowercase)
+        const normalizedEmbarkId = (embarkId || '').trim().toLowerCase();
+
         const response = await fetch(`${API_URL}/reports/submit`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                embarkId: embarkId,
+                embarkId: normalizedEmbarkId,
                 reportType: reportType,
                 reporterId: REPORTER_ID
             })
@@ -85,7 +88,10 @@ async function submitReportAPI(embarkId, reportType) {
  */
 async function getReportsAPI(embarkId) {
     try {
-        const response = await fetch(`${API_URL}/reports/${encodeURIComponent(embarkId)}`);
+        // Normalize input
+        const normalizedId = (embarkId || '').trim().toLowerCase();
+
+        const response = await fetch(`${API_URL}/reports/${encodeURIComponent(normalizedId)}`);
         const data = await response.json();
 
         if (!response.ok) {
@@ -104,7 +110,10 @@ async function getReportsAPI(embarkId) {
  */
 async function getReportHistoryAPI(embarkId) {
     try {
-        const response = await fetch(`${API_URL}/reports/${encodeURIComponent(embarkId)}/history`);
+        // Normalize the embarkId so capitalization never matters
+        const normalizedEmbarkId = (embarkId || '').trim().toLowerCase();
+
+        const response = await fetch(`${API_URL}/reports/${encodeURIComponent(normalizedEmbarkId)}/history`);
         const data = await response.json();
 
         if (!response.ok) {
