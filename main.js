@@ -4,7 +4,7 @@
 // ===========================================
 
 // Input Missing Information: Update API_URL if deploying to production
-const API_URL = 'http://localhost:3000/api';
+const API_URL = 'https://backend-production-77f64.up.railway.app/';
 
 // ===========================================
 // ANONYMOUS USER ID MANAGEMENT
