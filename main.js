@@ -179,7 +179,7 @@ if (document.getElementById('searchInput')) {
             const result = await getReportsAPI(embarkId);
 
             // Redirect to report page regardless (will show data or zeros)
-            window.location.href = `report.html?id=${encodeURIComponent(embarkId)}`;
+            window.location.href = `/report?id=${encodeURIComponent(embarkId)}`;
         } catch (error) {
             searchError.textContent = error.message || 'An error occurred while searching';
         } finally {

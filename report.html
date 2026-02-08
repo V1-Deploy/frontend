@@ -4,6 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Topside Tracker - Report</title>
+        <script>
+        // Remove .html from URL
+        (function() {
+            var path = window.location.pathname;
+            if (path.endsWith('.html')) {
+                var newPath = path.replace('.html', '');
+                window.history.replaceState(null, '', newPath + window.location.search);
+            }
+        })();
+    </script>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -21,10 +31,10 @@
             <a href="index.html" class="header-logo-link">
                 <img src="header-logo.png" alt="Topside Tracker" class="header-logo">
             </a>
-            <nav class="navbar">
+           <nav class="navbar">
                 <a href="/" class="nav-link">Home</a>
-                <a href="mission.html" class="nav-link">Our Mission</a>
-                <a href="support.html" class="nav-link">Support Us</a>
+                <a href="/mission" class="nav-link">Our Mission</a>
+                <a href="/support" class="nav-link">Support Us</a>
             </nav>
         </div>
     </header>
@@ -116,11 +126,11 @@
     <footer class="footer">
         <p class="footer-disclaimer">Topside Tracker is a fan-made project and is not affiliated with Embark Studios. All content is user-submitted and unverified.</p>
         <div class="footer-links">
-            <a href="privacy.html" class="footer-link">Privacy Policy</a>
+            <a href="/privacy" class="footer-link">Privacy Policy</a>
             <span class="footer-separator">•</span>
-            <a href="terms.html" class="footer-link">Terms of Service</a>
+            <a href="/terms" class="footer-link">Terms of Service</a>
             <span class="footer-separator">•</span>
-            <a href="contact.html" class="footer-link">Contact</a>
+            <a href="/contact" class="footer-link">Contact</a>
         </div>
     </footer>
 

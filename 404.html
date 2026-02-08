@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script>
+        // Redirect clean URLs to .html files
+        (function() {
+            var path = window.location.pathname;
+            
+            // Don't add .html if it's the root or already has .html
+            if (path === '/' || path.endsWith('.html')) {
+                return;
+            }
+            
+            // Redirect to .html version
+            window.location.replace(path + '.html' + window.location.search);
+        })();
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
