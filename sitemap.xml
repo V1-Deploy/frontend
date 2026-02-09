@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- HOME PAGE -->
+  <url>
+    <loc>https://www.topsidetracker.com/</loc>
+    <lastmod>2026-02-08</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- CONTACT PAGE -->
+  <url>
+    <loc>https://www.topsidetracker.com/contact</loc>
+    <lastmod>CHANGE THIS</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- OUR MISSION PAGE -->
+  <url>
+    <loc>https://www.topsidetracker.com/mission</loc>
+    <lastmod>CHANGE THIS</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- SUPPORT PAGE -->
+  <url>
+    <loc>https://www.topsidetracker.com/support</loc>
+    <lastmod>CHANGE THIS</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- PRIVACY POLICY PAGE -->
+  <url>
+    <loc>https://www.topsidetracker.com/privacy</loc>
+    <lastmod>CHANGE THIS</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- TERMS OF SERVICE PAGE -->
+  <url>
+    <loc>https://www.topsidetracker.com/terms</loc>
+    <lastmod>CHANGE THIS</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+</urlset>
